@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Currency Exchange Calculator</title>
+</head>
+<body>
+    
+    <div class="glavni">
+        <h1>Currency Exchange Calculator</h1>
+    
+        <div class="unos">
+            <div class="prva-valuta">
+                <label for="fromCurrency">From</label><br>
+                <select id="fromCurrency">
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+        
+            <div class="kolicina">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount">
+            </div>
+        
+            <div class="druga-valuta">
+                <label for="toCurrency">To</label><br>
+                <select id="toCurrency">
+                </select>
+            </div>
+        </div>
+    
+       <div class="izracunaj">
+           <button id="calculate">Calculate</button><br>
+       </div>
+
+      <div class="rezultat"><span id="result"></span></div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
