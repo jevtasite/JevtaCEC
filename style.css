@@ -1,8 +1,8 @@
 .glavni {
     width: 800px;
-    height: 800px;
+    height: 300px;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
@@ -19,8 +19,24 @@ label {
     font-weight: 600;
 }
 
-h1 {
+.naslov {
     margin-left: 25%
+}
+
+.naslov1 {
+    margin-left: 36%;
+}
+
+.language {
+    display: flex;
+    justify-content: center;
+    margin-right: 7px;
+    margin-top: 10px;
+}
+
+img {
+    width: 30px;
+    height: 25px;
 }
 
 .prva-valuta {
