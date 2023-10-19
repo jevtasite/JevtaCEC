@@ -1,47 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Currency Exchange Calculator</title>
 </head>
 <body>
     
-    <div class="glavni">
-
-        <div class="naslov"><h1>Currency Exchange Calculator</h1></div> 
+    <div class="container overflow-hidden glavni text-center">
+        <div class="row gy-5 pt-2">
+            <div class="col">
+                <h1>Currency Exchange Calculator</h1>
+            </div>
+        </div>
     
-        <div class="unos">
-            <div class="prva-valuta">
+        <div class="row mt-4 mt-md-5"> 
+            <div class="col-12 col-md-4">
                 <label for="fromCurrency">From</label><br>
-                <select id="fromCurrency">
-                    <option value="EUR">EUR</option>
+                <select id="fromCurrency" class="form-select">
+                    <option value="EUR">EUR - Eurozone</option>
                 </select>
             </div>
-        
-            <div class="kolicina">
+    
+            <div class="col-12 col-md-4">
                 <label for="amount">Amount</label>
-                <input type="number" id="amount">
+                <input type="number" id="amount" class="form-control" value="100">
             </div>
-        
-            <div class="druga-valuta">
+    
+            <div class="col-12 col-md-4">
                 <label for="toCurrency">To</label><br>
-                <select id="toCurrency">
+                <select id="toCurrency" class="form-select">
+                    <option value="RSD">RSD - Serbia</option>
                 </select>
             </div>
         </div>
     
-       <div class="izracunaj">
-           <button id="calculate">Calculate</button><br>
-       </div>
-
-      <div class="rezultat"><span id="result"></span></div>
-
-      <div class="language">
-        <a href="langRS.html"><img src="images/srbija.svg"></a>
-      </div>
-
+        <div class="row mt-4">
+            <div class="col-12 col-md-4 mt-2">
+                <button id="calculate">Calculate</button>
+            </div>
+    
+            <div class="col-12 col-md-4 mt-3">
+                <span id="result"></span>
+            </div>
+    
+            <div class="col-12 col-md-4 mt-3">
+                <a href="langRS.html">
+                    <img src="images/srbija.svg" alt="Srbija" class="img-fluid">
+                </a>
+            </div>
+        </div>
     </div>
-
-    <script src="main.js"></script>
+    
+    
+    
+        
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
